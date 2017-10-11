@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <title>Simon</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mauricio Campuzano">
+    <meta name="Resume" content="Simon game recreation">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+
+  <body>
+
+
+    <!-- header elements -->
+    <header class="container">
+      <div class="row text-center">
+        <h1 class="col-md-12 header">Simon<sup>&reg;</sup></h1>
+    <!-- &oacute; -->
+      </div>
+    </header>
+
+    <!-- controls & game elements -->
+    <section class="container">
+      <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+          
+          <!-- controls -->
+          <div class="row">
+            <div class="col-md-12 control">
+              <div class="row box text-center">
+                <div class="col-md-12">
+                  
+                  <!-- Rectangular switch -->
+                  <div class="btn-group">
+                    <div class="txt">Start</div>
+                    <label class="switch" >
+                      <input type="checkbox" class="start">
+                      <div class="slider"></div>
+                    </label>
+                  </div>
+
+                  <!-- Rounded switch -->
+                  <div class="btn-group">
+                    <div class="txt">Strict Mode</div>
+                    <label class="switch">
+                      <input type="checkbox" class="strict">
+                      <div class="slider round"></div>
+                    </label>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- game -->
+          <div class="row">
+            <div class="col-md-12 game pointer">
+              <div class="row simon">
+                <div class="tile" id="green"></div>
+                <div class="tile" id="red"></div>
+              </div>
+              <div class="row simon">
+                <div class="tile" id="blue"></div>
+                <div class="tile" id="yellow"></div>
+              </div>
+            </div>				
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- count elements -->
+    <section class="container">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          
+          <!-- count -->
+          <div class="row ">
+            
+            <div class="col-md-12 count-title">
+              <div class="row">
+                <div class="col-md-12 text-center">Count:</div>
+              </div>
+            </div>
+            
+            <div class="col-md-12 count-div">
+              <div class="row bk">
+                <div class="count">
+                  00
+                </div>
+              </div>
+            </div>				
+          </div>
+          
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </section>
+
+  <script src="script.js"></script>
+  </body>
+</html>
+

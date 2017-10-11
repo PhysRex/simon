@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Just+Me+Again+Down+Here|Pangolin|Patrick+Hand+SC|Schoolbell|Short+Stack|Swanky+and+Moo+Moo|Waiting+for+the+Sunrise|Sigmar+One");
+
+body {
+	margin: 20px auto;
+	background-color: #fff;
+}
+
+.inverted {
+	filter: invert(100%);
+}
+
+.container {
+/* 	border: 1px solid black; */
+/* 	background-color: #000; */
+}
+
+.row {
+/* 	border: 3px dotted blue; */
+}
+
+.hide {
+	display: none;
+}
+
+div[class^="col-"], .col, label {
+/* 	border: 1px solid red; */
+}
+
+.header {	
+	font-size: 5em;
+	font-weight: bold;
+	font-family: 'Sigmar One', cursive;
+	color: rgba(0,0,0,0.65);
+	text-shadow: 1px 1px 2px gray;
+}
+
+.header>sup {
+	font-size: 0.3em;
+	vertical-align: super;
+}
+
+.control {
+	display: flex;
+	flex-direction: column;
+/* 	flex-wrap: nowrap; */
+	justify-content: center;
+	align-items: center;
+}
+
+
+.btn-group {
+/* 	border: 2px dotted black; */
+	padding: 0 10px;
+}
+
+ .txt {
+/* 	background-color: gray; */
+/* 	border: 3px dashed green; */
+	
+	 display: flex;
+	 flex-direction: row;
+	 /* 	 flex-wrap: nowrap; */
+	 justify-content: center;
+	 align-items: center;	 
+
+	 font-size: 1.2em;
+	 font-weight: lighter;
+	 font-family: 'Sigmar One', cursive;
+	 color: rgba(0,0,0,0.65);
+	 text-shadow: 1px 1px 2px gray;
+	 font-size: 1.2em;
+}
+
+
+
+/*  
+*********************************************
+*********************************************
+*********************************************
+*/
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: flex;
+	margin: 1em auto;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 5px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #77216F;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #77216F;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*  
+*********************************************
+*********************************************
+*********************************************
+*/
+
+
+.game {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.simon {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.tile {
+/* 	border: 1px solid red; */
+	height: 150px;
+	width: 150px;
+	
+  text-align: center;
+  outline: none;
+  border: none;
+/*   border-radius: 15px; */
+/*   box-shadow:  10px 10px 5px 0px rgba(0,0,0,0.75); */
+	opacity: 0.6;
+}
+
+.pointer {
+	cursor: pointer;
+	pointer-events: none
+}
+
+.tile:hover, .hover {
+/*   box-shadow:  0px 0px 1px 1px rgba(0,0,0,0.95); */
+/* 	border: 1px solid #000; */
+	border: 0;
+	transition: all 0.1s ease;
+}
+
+.tile:focus {
+	outline: 0px solid transparent;
+}
+
+.tile:active {
+/*   box-shadow:  5px 5px 2.5px 0px rgba(0,0,0,0.95); */
+	border: 0;
+	box-shadow: inset 0 0 10px lightgray;
+  transform: scale(0.98);
+/* 	transform: translateY(2px); */	
+	transition: all 0.1s ease;
+	opacity: 1
+}
+
+.active {
+/*   box-shadow:  5px 5px 2.5px 0px rgba(0,0,0,0.95); */
+	border: 0;
+	box-shadow: inset 0 0 10px gray;
+  transform: scale(0.98);
+/* 	transform: translateY(2px); */	
+	transition: all 0.1s ease;
+	opacity: 1
+}
+
+#green {
+	background-color: #14B622;
+/*   transform: rotate(-45deg); */
+/*   transform-origin: 0 100%; */	
+	border-radius: 150px 0 0px 0;
+}
+
+#red {
+	background-color: #FE4438;
+	border-radius: 0 150px 0 0;
+}
+
+#blue {
+	background-color: #5CCBFF;
+	border-radius: 0 0 0 150px;
+}
+
+#yellow {
+	background-color: #FEFF03;
+	border-radius: 0 0 150px 0;
+}
+
+.count-title {
+	margin: 10px 0 0 0;
+	font-size: 1.5em;
+	font-weight: lighter;
+	font-family: 'Sigmar One', cursive;
+	color: rgba(0,0,0,0.65);
+	text-shadow: 1px 1px 2px gray;
+	
+}
+
+.count-div {
+/* 	border: 3px solid black !important; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bk {
+	background-color: dimgray;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	
+	height: 120px;
+  width: 300px;
+  border-radius: 5px
+}
+
+.count {
+	text-align: center;
+/* 	margin-top: -0.05em; */
+	font-size: 5em;
+	font-weight: bold;
+	font-family: 'Sigmar One', cursive;
+
+	
+	
+	/* 	font-size: 7em;
+	font-weight: bold;
+	font-family: 'Patrick Hand', cursive, "Patrick Hand SC" ; */
+	color: rgba(0,0,0,0.65);
+	text-shadow: 1px 1px 2px gray;
+}
